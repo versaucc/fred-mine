@@ -1,0 +1,20 @@
+Usage of fred.py is extremely simple. 
+I recommend visiting https://fred.stlouisfed.org/docs/api/fred/ and exploring their documenation. 
+Although it is not thorough, requests are simple to construct. 
+
+Before I list all of the function headers and return types, note that it is important 
+to understand that this is not (quite) a standalone package. If you attempt to scrape 
+massive amounts of data, you will usually hit a limit shortly. 
+To avoid this, implement your own delays and limit protections. 
+
+Currently, Fred is a class containing the functions. 
+This may not remain that way. 
+
+API Functions: 
+
+def concatenate_url(self, parameters):
+	Return type: URL constructed for XLM request 
+
+def chunk_date_range(self, parameters):
+	Return type: List of urls that fit the date range for FRED's limits
+

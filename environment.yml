@@ -1,0 +1,17 @@
+name: findata
+channels: 
+    - conda-forge
+    - defaults
+dependencies: 
+    - python=3.9
+    - pandas>=0.15
+    - matplotlib
+    - IPython
+    - python-dotenv
+    - numpy
+    - pip
+    - pip:
+        - fredapi
+        - openpyxl
+        - pytz
+        
